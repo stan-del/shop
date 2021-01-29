@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  filter: opacity(0.88) !important;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#showcase {
+  background-image: url(img/jab.jpg);
+  background-attachment: fixed;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 5rem;
+}
+
+#showcase h2 {
+  font-weight: bolder;
+}
+
+section#boxes {
+  display: flex !important;
+  grid-gap: 2rem !important;
+  padding: 3rem !important;
+}
+
+section#below {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 1rem;
+}
+
+section#below #welcome {
+  padding: 1rem;
+}
+
+section#below #aside {
+  background: #333;
+  color: white;
+  padding: 1rem;
+}
+
+#bold {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  grid-gap: 1rem;
+  color: white;
+}
+
+#quote {
+  margin-top: 3rem !important;
+  background-image: url(img/scrary.png);
+  background-size: cover !important;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid !important;
+  align-items: center !important;
+  align-content: center !important;
+  text-align: center !important;
+  height: 50vh;
+}
+
+ul.tabs a:hover {
+  color: #333 !important;
+  font-weight: bolder !important;
+}
+
+#items {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  grid-gap: 1rem !important;
+}
+
+#items .card-image {
+  width: 70% !important;
+  display: grid !important;
+  margin: auto !important;
+  padding: 1rem !important;
+}
+
+#aside {
+  padding: 1rem;
+}
+
+#number {
+  border-radius: 5%;
+  display: grid;
+  padding: 2rem !important;
+  max-width: 500px;
+}
+
+#number h5.bold, #number h4 {
+  font-weight: bold;
+}
+
+#form {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  margin-top: 3rem !important;
+}
+
+#form form {
+  color: #ffffff;
+  padding: 2rem !important;
+}
+
+footer {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  justify-items: center;
+  padding: 1rem;
+}
+
+@media (max-width: 800px) {
+  .card-image {
+    width: 80% !important;
+    display: grid !important;
+    margin: auto !important;
+  }
+  section#boxes {
+    display: grid !important;
+  }
+  #aside {
+    padding: 1rem;
+  }
+  section#below {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #items {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+  #form {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    padding: 2rem !important;
+  }
+  #form form {
+    padding: 1rem !important;
+    color: white !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
